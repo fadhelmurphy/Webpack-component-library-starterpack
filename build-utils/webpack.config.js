@@ -22,7 +22,7 @@ module.exports = (env, {mode}) => ({
 	output: {
 		filename: 'index.js',
 		path: path.resolve(__dirname, 'dist'),
-		libraryTarget: 'commonjs'
+		libraryTarget: 'umd'
 	},
 	plugins: [new CleanWebpackPlugin()],
 	module: {
