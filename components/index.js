@@ -1,2 +1,3 @@
-const { Button } = './Button'
-export { Button }
+import Button from "./Button"
+
+export {Button}

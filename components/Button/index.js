@@ -1,17 +1,28 @@
 import React from 'react'
-import './button.scss'
+import PropTypes from "prop-types";
 
-const Button = ({message}) => (
-	<button>{message}</button>
+const Button = ({children}) => (
+	<>
+    <button className='custom-button'>{children}</button>
+    <style jsx>
+        {
+            `
+            .custom-button {
+                color: white;
+                background: red;
+            }
+            `
+        }
+    </style>
+    </>
 )
 
 Button.propTypes = {
-	message: PropTypes.string,
+	children: PropTypes.element,
 };
 
 Button.defaultProps = {
-	message: "Nganu",
+	children: "NGANU",
 };
-
 
 export default Button
