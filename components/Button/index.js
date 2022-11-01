@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from "prop-types";
 
-const Button = ({children}) => (
+export const Button = ({children}) => (
 	<>
     <button className='custom-button'>{children}</button>
     <style jsx>
@@ -24,5 +24,3 @@ Button.propTypes = {
 Button.defaultProps = {
 	children: "NGANU",
 };
-
-export default Button
